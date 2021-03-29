@@ -17,7 +17,7 @@ client.connect(err => {
   const ordersCollection = client.db("EmaJohn").collection("orders");
 
   app.get('/', (req, res) => {
-    req.send('Database is working!');
+    res.send('Database is working!');
   })
   
   app.post('/addProduct', (req, res) => {
